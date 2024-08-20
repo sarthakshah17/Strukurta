@@ -39,7 +39,7 @@ function ProductCard({ title, price, image, brand, status }:any) {
       text: "Their commitment to quality and attention to detail is unmatched. I've had the pleasure of collaborating with Struktura on multiple projects, and I must say their commitment to quality and attention to detail is unmatched. Their team's expertise in construction has truly elevated the success of my developments.",
       name: 'Madison Johnson',
       role: 'Property Developer',
-      image: '/construction.jpg', 
+      image: '/image 1.png', 
     },
     {
         text: "lol",
@@ -75,8 +75,12 @@ export default function Page() {
     return (
       <>
          <header className="w-full h-16 flex justify-between items-center text-black shadow-md px-8 bg-white">
-      <div className="text-2xl font-extrabold px-10">Struktura</div>
-      <nav className="hidden md:flex space-x-8">
+          <div className="flex gap-1 items-center">
+            <img src="/Logo1.png" alt="" className="h-10" />
+            <div className="text-2xl font-extrabold">HemLLP</div>
+            </div>
+      
+      <nav className="hidden md:flex space-x-12">
         <a href="#" className="font-bold hover:underline">Home</a>
         <a href="#" className="font-bold hover:underline">About Us</a>
         <a href="#" className="font-bold hover:underline">Careers</a>
@@ -103,9 +107,10 @@ export default function Page() {
   
 
         <main className="relative w-full min-h-screen bg-cover bg-center" style={{ backgroundImage: "url('/construction.png')" }}>
-        <div className="absolute inset-0 bg-black bg-opacity-40 flex flex-col justify-center items-center text-white text-center px-10 md:px-0">
+        <div className="absolute inset-0 bg-black bg-opacity-40 pt-72 items-center text-white text-center px-10 md:px-0">
           <h1 className="text-4xl md:text-6xl font-bold">Building Your Vision with Precision</h1>
-          <p className="mt-4 max-w-lg mx-auto">We are Struktura, your trusted partner in the world of construction. With a legacy of excellence and a commitment to quality, we turn your visions into reality.</p>
+          <p className="mt-4 max-w-5xl mx-auto">We, HEM CONTRACTS LLP are a team of experienced Plumbing Contractors. We bring to you an assurance of quality deliverables, prompt service and effective execution. We have been in the industry for more than 9 years now and boast of a rich roster of satisfied clients.
+          </p>
           <button className="mt-6 bg-white text-black rounded-full px-6 py-2">Learn more</button>
         </div>
       </main>
@@ -154,26 +159,26 @@ export default function Page() {
 
 
         <section className="py-16 px-4 mt-20  text-black ">
-          <h2 className="text-5xl  mb-6 text-center">Why Choose Struktra Construction</h2>
-          <p className="max-w-2xl mx-auto mb-12 text-justify px-9 md:px-0">At Struktra Construction, our commitment to excellence, unparalleled expertise and unwavering dedication set us apart, Here's why you should choose us :</p>
+          <h2 className="text-5xl  mb-6 text-center">Why Choose HEM Contracts Construction</h2>
+          <p className="max-w-2xl mx-auto mb-12 text-justify px-9 md:px-0">At HEM Contracts Construction, our commitment to excellence, unparalleled expertise and unwavering dedication set us apart, Here's why you should choose us :</p>
          
           <div className="flex flex-wrap justify-center gap-8 mt-12">
-          <div className="flex flex-col  space-x-2 ">
-                <Image width={400} height={400} alt="lol" src="/construction.jpg" className="rounded-3xl" />
+          <div className="flex flex-col  space-x-2">
+                <Image width={400} height={200} alt="lol" src="/image 1.png" className="rounded-3xl object-cover h-80" />
               
               <span className="text-xl -mt-14 font-bold text-white ml-4">Always building quality industrial</span>
               <p className="text-white ml-4">Lorem ipsum dolor, sit amet </p>
               
             </div>
             <div className="flex flex-col  space-x-2 ">
-                <Image width={400} height={400} alt="lol" src="/construction.jpg" className="rounded-3xl" />
+                <Image width={400} height={200} alt="lol" src="/image 4.png" className="rounded-3xl object-cover h-80" />
               
               <span className="text-xl -mt-14 font-bold text-white ml-4">Always building quality industrial</span>
               <p className="text-white ml-4">Lorem ipsum dolor, sit amet </p>
               
             </div>
             <div className="flex flex-col  space-x-2 ">
-                <Image width={400} height={400} alt="lol" src="/construction.jpg" className="rounded-3xl" />
+                <Image width={400} height={200} alt="lol" src="/image 3.png" className="rounded-3xl object-cover h-80" />
               
               <span className="text-xl -mt-14 font-bold text-white ml-4">Always building quality industrial</span>
               <p className="text-white ml-4">Lorem ipsum dolor, sit amet </p>
@@ -185,8 +190,8 @@ export default function Page() {
 
 
         <section className="bg-gray-50 py-12 mt-20">
-        <h2 className="text-5xl  mb-6 text-center ">Why Choose Struktra Construction</h2>
-        <p className="max-w-2xl mx-auto mb-12 text-justify px-10 md:px-0">At Struktra Construction, our commitment to excellence, unparalleled expertise and unwavering dedication set us apart, Here's why you should choose us :</p>
+        <h2 className="text-5xl  mb-6 text-center ">Why Choose Hem Contracts Construction</h2>
+        <p className="max-w-2xl mx-auto mb-12 text-justify px-10 md:px-0">At Hem Contracts Construction, our commitment to excellence, unparalleled expertise and unwavering dedication set us apart, Here's why you should choose us :</p>
       <div className="container mx-auto px-4">
         <div className="flex flex-wrap justify-center space-x-2 mb-8">
           <button className="bg-white text-black border border-gray-300 rounded-full px-4 py-1 font-bold hover:bg-gray-200">Structural Materials</button>
@@ -198,7 +203,7 @@ export default function Page() {
           <ProductCard
             title="Steel Beams"
             price="$500 - $2,500"
-            image="/construction.png"
+            image="/image 1.png"
             brand="SteelMax"
             status="Pre-order"
           />
@@ -233,7 +238,7 @@ export default function Page() {
 
     <section className="bg-gray-50 py-12 mt-20">
         <h2 className="text-5xl  mb-6 text-center">Our Remarkable Project Portfolio</h2>
-        <p className="max-w-2xl mx-auto mb-12 text-justify">At Struktra Construction, our commitment to excellence, unparalleled expertise and unwavering dedication set us apart, Here's why you should choose us :</p>
+        <p className="max-w-2xl mx-auto mb-12 text-justify">At Hem Contracts Construction, our commitment to excellence, unparalleled expertise and unwavering dedication set us apart, Here's why you should choose us :</p>
       <div className="container mx-auto px-4">
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
