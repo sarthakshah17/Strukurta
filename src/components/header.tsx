@@ -1,6 +1,6 @@
 "use client"
 import { useState } from "react";
-const header = () => {
+const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
     const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -39,4 +39,4 @@ const header = () => {
   )
 }
 
-export default header
+export default Header
