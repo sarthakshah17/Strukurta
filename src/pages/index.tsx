@@ -2,6 +2,9 @@
 
 import Image from "next/image"
 import { useState } from "react";
+import Header from "../components/header";  
+import Client from "../components/client";  
+import Footer from "../components/footer";
 
 
 function ProductCard({ title, price, image, brand, status }:any) {
@@ -36,7 +39,7 @@ function ProductCard({ title, price, image, brand, status }:any) {
 
   const testimonials = [
     {
-      text: "Their commitment to quality and attention to detail is unmatched. I've had the pleasure of collaborating with Struktura on multiple projects, and I must say their commitment to quality and attention to detail is unmatched. Their team's expertise in construction has truly elevated the success of my developments.",
+      text: "Their commitment to quality and attention to detail is unmatched. I've had the pleasure of collaborating with Hem Contracts on multiple projects, and I must say their commitment to quality and attention to detail is unmatched. Their team's expertise in construction has truly elevated the success of my developments.",
       name: 'Madison Johnson',
       role: 'Property Developer',
       image: '/image 1.png', 
@@ -48,7 +51,7 @@ function ProductCard({ title, price, image, brand, status }:any) {
         image: '/construction.jpg', 
       },
       {
-        text: "Their commitment to quality and attention to detail is unmatched. I've had the pleasure of collaborating with Struktura on multiple projects, and I must say their commitment to quality and attention to detail is unmatched. Their team's expertise in construction has truly elevated the success of my developments.",
+        text: "Their commitment to quality and attention to detail is unmatched. I've had the pleasure of collaborating with Hem Contracts on multiple projects, and I must say their commitment to quality and attention to detail is unmatched. Their team's expertise in construction has truly elevated the success of my developments.",
         name: 'Madison Johnson',
         role: 'Property Developer',
         image: '/construction.jpg', 
@@ -74,36 +77,7 @@ export default function Page() {
   };
     return (
       <>
-         <header className="w-full h-16 flex justify-between items-center text-black shadow-md px-8 bg-white">
-          <div className="flex gap-1 items-center">
-            <img src="/Logo1.png" alt="" className="h-10" />
-            <div className="text-2xl font-extrabold">HemLLP</div>
-            </div>
-      
-      <nav className="hidden md:flex space-x-12">
-        <a href="#" className="font-bold hover:underline">Home</a>
-        <a href="#" className="font-bold hover:underline">About Us</a>
-        <a href="#" className="font-bold hover:underline">Careers</a>
-        <a href="#" className="font-bold hover:underline">Our Team</a>
-      </nav>
-      <button className="hidden md:inline-block border border-black rounded-full px-4 py-1 font-bold">Get in touch</button>
-      <div className="md:hidden">
-        <button onClick={toggleMenu} className="focus:outline-none">
-          <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16"></path>
-          </svg>
-        </button>
-      </div>
-      {isOpen && (
-        <nav className="absolute top-16 left-0 w-full bg-white shadow-md md:hidden flex flex-col items-center space-y-4 py-4 z-40">
-          <a href="#" className="font-bold hover:underline">Home</a>
-          <a href="#" className="font-bold hover:underline">About Us</a>
-          <a href="#" className="font-bold hover:underline">Careers</a>
-          <a href="#" className="font-bold hover:underline">Our Team</a>
-          <button className="border border-black rounded-full px-4 py-1 font-bold">Get in touch</button>
-        </nav>
-      )}
-    </header>
+        <Header />
   
 
         <main className="relative w-full min-h-screen bg-cover bg-center" style={{ backgroundImage: "url('/construction.png')" }}>
@@ -118,7 +92,7 @@ export default function Page() {
   
         <section className="py-16 px-4 bg-blue-50 text-black text-center ">
           <h2 className="text-5xl font-bold mb-6 mt-20">Our Legacy of Excellence</h2>
-          <p className="max-w-2xl mx-auto mb-12 text-justify">Established 2012, Struktura has been a leading force in the construction industry, specializing in commercial office building construction. Our commitment to quality and innovation sets us apart.</p>
+          <p className="max-w-2xl mx-auto mb-12 text-justify">Established 2012, Hem Contracts has been a leading force in the construction industry, specializing in commercial office building construction. Our commitment to quality and innovation sets us apart.</p>
           <div className="flex flex-wrap justify-center gap-32  md:gap-56">
             <div className="flex flex-col items-center">
               <span className="text-5xl font-bold">260+</span>
@@ -156,9 +130,10 @@ export default function Page() {
             </div>
           </div>
         </section>
+        <Client />
 
 
-        <section className="py-16 px-4 mt-20  text-black ">
+        <section className="py-16 px-4 mt-2 text-black ">
           <h2 className="text-5xl  mb-6 text-center">Why Choose HEM Contracts Construction</h2>
           <p className="max-w-2xl mx-auto mb-12 text-justify px-9 md:px-0">At HEM Contracts Construction, our commitment to excellence, unparalleled expertise and unwavering dedication set us apart, Here's why you should choose us :</p>
          
@@ -309,6 +284,7 @@ export default function Page() {
         </div>
       </div>
     </section>
+    <Footer />
       </>
     );
   }
